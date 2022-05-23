@@ -4,10 +4,10 @@ class SecureStorageService {
   final storage = const FlutterSecureStorage();
 
   Future<String?> read(String key) async {
-    throw UnimplementedError();
+    return await storage.read(key: key);
   }
 
   Future<void> write(String key, String value) async {
-    throw UnimplementedError();
+    await storage.write(key: key, value: value);
   }
 }
